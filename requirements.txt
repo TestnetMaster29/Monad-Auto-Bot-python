@@ -1,0 +1,9 @@
+inquirer
+web3
+colorama
+py-solc-x
+eth-account
+web3connectpy
+loguru
+aiohttp
+requests
