@@ -6,7 +6,7 @@ from eth_abi import abi
 from decimal import Decimal
 from loguru import logger
 from web3 import AsyncWeb3, Web3
-from web3rpc import rpcs
+from web3rpcs import rpcs
 import aiohttp
 from colorama import init, Fore, Style
 
