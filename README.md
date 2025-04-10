@@ -162,4 +162,4 @@ python main.py
   - Bilingual output (Vietnamese/English).
 - **Usage**: Select from `main.py` menu, input number of cycles.
 
-Last updated: Thu Apr 10 03:10:01 UTC 2025
+Last updated: Thu Apr 10 06:48:48 UTC 2025
